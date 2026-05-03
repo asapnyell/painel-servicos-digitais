@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import { Button } from "@/components/ui/button";
 import { Code2 } from "lucide-react";
 
@@ -14,12 +13,30 @@ export function Header() {
           Prime Studio
         </div>
 
-        {/* Navegação Desktop */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
-          <a href="#inicio" className="hover:text-primary transition-colors">Início</a>
-          <a href="#servicos" className="hover:text-primary transition-colors">Serviços</a>
-          <a href="#sobre" className="hover:text-primary transition-colors">Sobre Nós</a>
-        </nav>
+                    {/* Navegação Desktop */}
+            <nav className="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
+            <a 
+                href="#inicio" 
+                onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
+                className="hover:text-primary hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-all"
+            >
+                Início
+            </a>
+            <a 
+                href="#servicos" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="hover:text-primary transition-colors"
+            >
+                Soluções
+            </a>
+            <a 
+                href="#sobre" 
+                onClick={(e) => { e.preventDefault(); document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' }); }}
+                className="hover:text-primary transition-colors"
+            >
+                Sobre Nós
+            </a>
+            </nav>
 
         {/* Botão Call to Action */}
         <div className="flex items-center">

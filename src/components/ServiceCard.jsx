@@ -1,4 +1,3 @@
-// src/components/ServiceCard.jsx
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 

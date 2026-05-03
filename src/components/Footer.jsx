@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 export function Footer() {
   const anoAtual = new Date().getFullYear();
 

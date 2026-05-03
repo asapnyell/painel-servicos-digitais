@@ -1,7 +1,5 @@
-// src/components/ServicesSection.jsx
 import { Bot, Code2, LineChart, Server } from "lucide-react";
 import { ServiceCard } from "./ServiceCard";
-// 1. Importe o motion
 import { motion } from "framer-motion";
 
 export function ServicesSection() {
